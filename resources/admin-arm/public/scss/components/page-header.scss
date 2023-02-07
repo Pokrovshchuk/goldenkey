@@ -1,0 +1,46 @@
+.page-header {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  &__wrapper {
+    margin: 0 50px;
+    display: flex;
+    position: relative;
+    padding-bottom: 21px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      background-color: #9096a0;
+      opacity: 0.2;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__admin {
+    margin: 0;
+    margin-top: 40px;
+    margin-right: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1b1d21;
+  }
+
+  &__place {
+    font-weight: 600;
+    display: block;
+  }
+
+  &__button {
+    margin-top: 46px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

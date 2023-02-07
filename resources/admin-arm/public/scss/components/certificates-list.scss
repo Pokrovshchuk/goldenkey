@@ -1,0 +1,144 @@
+.certificates-list {
+    padding-top: 35px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        padding-left: 20px;
+    }
+
+    &__head-title {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 140%;
+        color: #9096a0;
+        width: 75px;
+        margin: 0;
+        margin-right: 40px;
+
+        &--hall-code {
+            width: 75px;
+            margin-right: 38px;
+        }
+
+        &--hall-name {
+            width: 91px;
+            margin-right: 52px;
+        }
+
+        &--certificate-code {
+            width: 75px;
+            margin-right: 31px;
+        }
+
+        &--name {
+            width: 28px;
+            margin-right: 155px;
+        }
+
+        &--date {
+            width: 28px;
+            margin-right: 100px;
+        }
+
+        &--time {
+            width: 38px;
+            margin-right: 56px;
+        }
+
+        &--status {
+            width: 130px;
+            margin-right: 0;
+        }
+    }
+
+    &__list {
+        @include list-reset;
+        background: #ffffff;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding-top: 10px;
+    }
+
+    &__item {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 865px;
+            height: 1px;
+            background-color: #eff1f3;
+            bottom: 0;
+        }
+    }
+
+    &__cell {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        color: #1b1d21;
+        width: 75px;
+        margin: 0;
+        margin-right: 36px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &--success {
+            color: #27ae60;
+        }
+
+        &--inactive {
+            color: #9096a0;
+        }
+
+        &--error {
+            color: #eb5757;
+        }
+
+        &--hall-name {
+            width: 107px;
+            margin-right: 40px;
+        }
+
+        &--hall-code {
+            width: 70px;
+        }
+
+        &--name {
+            width: 155px;
+            margin-right: 28px;
+        }
+
+        &--date {
+            margin-right: 51px;
+        }
+
+        &--time {
+            margin-right: 22px;
+        }
+    }
+
+    &__controls {
+        background-color: #fff;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        padding: 30px;
+        padding-top: 50px;
+        display: flex;
+    }
+
+    &__button {
+        padding: 15px 75px;
+    }
+}

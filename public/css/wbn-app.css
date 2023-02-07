@@ -1,0 +1,45 @@
+.login-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.login-logo{
+    margin: 60px auto 110px;
+}
+
+.login-body .form-control{
+    border: 1px solid #EFF1F3;
+    height: 60px;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.login-body .form-control:hover,
+.login-body .form-control:active,
+.login-body .form-control:focus{
+    outline: none;
+    border: 1px solid #EFF1F3;
+    box-shadow: none;
+}
+.btn.login_btn{
+    display: block;
+    margin: 80px auto 0;
+    width: 250px;
+    color: #fff;
+    background: #F2994A;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn.login_btn:hover{
+    color: #fff;
+    background: #f38625;
+}
+
+.py-4{
+    background: #F4F8FC;
+    height: 100vh;
+}

@@ -1,0 +1,59 @@
+.notifications {
+  @include button-reset;
+
+  position: relative;
+  margin-top: 50px;
+  margin-right: 40px;
+  display: flex;
+  z-index: 11;
+
+  &--list-shown {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 73px;
+      height: 42px;
+      background: #ffffff;
+      border-radius: 6px;
+      z-index: -1;
+      left: -16%;
+      top: -36%;
+    }
+  }
+
+  &--is-present {
+    &::before {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #f1f5f9;
+      background-color: #eb5757;
+      content: '';
+      border-radius: 50%;
+      left: 13px;
+      top: 0;
+    }
+  }
+
+  &__count {
+    display: block;
+    margin-left: 9px;
+    align-self: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #1b1d21;
+  }
+
+  &__new-list {
+    @include list-reset;
+    position: absolute;
+    left: -180px;
+    top: 35px;
+    max-height: 100vh;
+    transition: max-height 500ms ease-in-out;
+  }
+}

@@ -1,0 +1,126 @@
+.note {
+  background: rgba(#f4f8fc, 0.8);
+  border-radius: 6px;
+  width: 522px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  &--new {
+    position: relative;
+    background-color: #fff;
+    animation-name: appearance;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+    will-change: top, opacity;
+    opacity: 1;
+    transition: all 200ms ease;
+    overflow: hidden;
+    max-height: 100vh;
+  }
+
+  &--removed-left {
+    transform: translateX(-1000px) !important;
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    height: 0;
+  }
+  &--removed-right {
+    transform: translateX(1000px) !important;
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    height: 0;
+  }
+
+  &__wrapper {
+    &--bank {
+      display: flex;
+      max-height: 40px;
+      align-items: center;
+
+      & .note {
+        &__title {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          width: 100%;
+        }
+
+        &__message {
+          margin: 0;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1b1d21;
+
+    &--error {
+      color: #eb5757;
+    }
+  }
+  &__message-icon {
+    margin-right: 7px;
+  }
+
+  &__time-left {
+    margin-left: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #9096a0;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 11px;
+    text-align: left;
+  }
+  &__info {
+    display: block;
+    margin-top: 4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    color: #9096a0;
+  }
+
+  &__img-wrapper {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+
+  &__message {
+    margin-left: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1b1d21;
+
+    &--error {
+      color: #eb5757;
+    }
+    &--success {
+      color: #27ae60;
+    }
+  }
+}

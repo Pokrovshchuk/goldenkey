@@ -1,0 +1,37 @@
+.buttons-list {
+  @include list-reset;
+  display: flex;
+  margin-left: auto;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__button {
+    @include button-reset;
+
+    padding: 7px 15px;
+    border-radius: 37px;
+    background-color: #eff1f3;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1b1d21;
+
+    & svg {
+      margin-right: 5px;
+      fill: currentColor;
+    }
+
+    &:active {
+      background-color: #9096a0;
+      color: #ffffff;
+    }
+  }
+}

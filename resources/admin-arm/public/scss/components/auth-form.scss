@@ -1,0 +1,111 @@
+.auth-form {
+  max-width: 567px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #1b1d21;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+  &__legend {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1b1d21;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__label {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 60px;
+    background-color: #fff;
+    padding: 20px 30px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1b1d21;
+    border: 1px solid #eff1f3;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: #9096a0;
+    }
+
+    &--invalid {
+      color: #eb5757;
+      border-bottom-color: #eb5757;
+    }
+  }
+
+  &__show-password {
+    @include button-reset;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__forgot-password {
+    @include button-reset;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: right;
+    color: #9096a0;
+    padding-bottom: 3px;
+    display: inline-block;
+    margin-left: auto;
+    border-bottom: 1px dashed currentColor;
+    margin-top: 10px;
+
+    &:active {
+      color: #1b1d21;
+    }
+  }
+
+  &__error-text {
+    display: inline-block;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: right;
+    color: #eb5757;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  &__submit {
+    display: block;
+    width: 258px;
+    margin: 0 auto;
+  }
+}
